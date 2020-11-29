@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid*/
+/* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid, jsx-a11y/control-has-associated-label*/
 
 import React, { useState } from "react";
 import PropTypes from "prop-types";
