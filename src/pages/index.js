@@ -1,13 +1,10 @@
 import * as React from "react"
+import Hero from '../components/hero';
 
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-       <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
+    <main className="container mx-auto">
+      <Hero />
     </main>
   )
 }
