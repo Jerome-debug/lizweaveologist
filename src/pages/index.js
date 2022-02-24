@@ -1,10 +1,12 @@
 import * as React from "react"
-import Hero from '../components/hero';
+import Header from '../components/header';
+import Navigation from '../components/navigation';
 
 const IndexPage = () => {
   return (
-    <main className="container mx-auto">
-      <Hero />
+    <main className="bg-body mx-auto">
+      <Navigation />
+      <Header />
     </main>
   )
 }
