@@ -1,6 +1,6 @@
-import * as React from "react"
-import Header from '../components/header';
-import Navigation from '../components/navigation';
+import * as React from "react";
+import Header from "../components/header";
+import Navigation from "../components/navigation";
 
 const IndexPage = () => {
   return (
@@ -8,7 +8,7 @@ const IndexPage = () => {
       <Navigation />
       <Header />
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
