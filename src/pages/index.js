@@ -1,13 +1,15 @@
 import * as React from "react";
 import Header from "../components/header";
-import Navigation from "../components/navigation";
+import Feature from "../components/feature";
+import Gallery from '../components/gallery';
 
 const IndexPage = () => {
   return (
-    <main className="bg-body mx-auto">
-      <Navigation />
+    <>
       <Header />
-    </main>
+      <Feature />
+      <Gallery />
+    </>
   );
 };
 
