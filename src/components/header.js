@@ -4,58 +4,86 @@ import Typical from "react-typical";
 
 export default function Header() {
   const animated = React.useState(true);
-  const transition = (duration) =>
+  const transitionAndTiming = (duration) =>
     `transition duration-${duration} ease-in-out`;
-  const styleTranslate = "translate-y-10 opacity-0";
+  const textStyleTranslate = "translate-y-10 opacity-0";
 
   return (
-    <div className="min-h-screen flex items-center justify-center" id="header">
-      <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
-        {/*TODO: FIX blending with the background*/}
-        <div className="w-full md:w-2/5 ">
+    <>
+      <div
+        className="relative flex content-center items-center justify-center pt-16 pb-32"
+        style={{
+          minHeight: "75vh",
+        }}
+      >
+        <div className="absolute top-0 h-full w-full bg-cover bg-center">
           <StaticImage
-            src="../images/liz_ngote.jpg"
-            alt="profile"
-            className={`w-full mx-auto opacity-50`}
-            effect="blur"
-            placeholder="blurred"
+            src="../images/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg"
+            alt="Liz"
+            className="absolute inset-0 h-full w-full object-cover"
           />
+          <div
+            id="overlay"
+            className="absolute inset-0 h-full w-full bg-gray-900 bg-opacity-50"
+          ></div>
         </div>
-
-        <div className="font-dosis w-full md:w-3/5 text-center md:text-left ">
-          <h2
-            className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
-              animated ? "translate-y-0" : styleTranslate
-            }  ${transition(2000)} `}
-          >
-            Hi <span class="text-3xl md:text-4xl lg:text-6xl">👋</span>
-          </h2>
-          <h1
-            className={`text-2xl md:text-4xl text-gray-400 transform ${
-              animated ? "translate-y-0" : styleTranslate
-            } ${transition(3000)} `}
-          >
-            I am <span> </span>
-            {/*TODO add hair stylist emoji */}
-            <Typical
-              steps={["Liz Ngote", 5000, "a Weavologist ...", 5000]}
-              loop={Infinity}
-              className="inline-block"
-              wrapper="p"
-            />
-          </h1>
-
-          <div to="mywork">
-            <button
-              className={`animate-bounce bg-indigo-600 px-10 py-3 text-lg uppercase text-white rounded-md mt-10 hover:bg-indigo-700 transform  ${
-                animated ? "translate-y-0" : styleTranslate
-              } ${transition(3500)}`}
-            >
-              Checkout my work
-            </button>
+        <div className="container relative mx-auto">
+          <div className="flex flex-wrap items-center">
+            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-6/12">
+              <div className="pr-12">
+                <h1
+                  className={`transform text-left text-5xl font-semibold text-pink-600 ${
+                    animated ? "translate-y-0" : textStyleTranslate
+                  } ${transitionAndTiming(2000)}`}
+                >
+                  Hi <span className="animate-bounce text-5xl">👋</span>{" "}
+                  {/*TODO animation not working */}
+                </h1>
+                <h1
+                  className={`mt-4 transform text-left text-2xl font-light text-pink-100 md:text-4xl ${
+                    animated ? "translate-y-0" : textStyleTranslate
+                  } ${transitionAndTiming(3000)}`}
+                >
+                  I <span> </span>
+                  {/*TODO add hair stylist emoji */}
+                  <Typical
+                    steps={[
+                      "am Liz Ngote",
+                      5000,
+                      "am a Weavologist",
+                      5000,
+                      "am your Hair stylist 💇🏻‍♀️",
+                      5000,
+                    ]}
+                    loop={Infinity}
+                    className="inline-block"
+                    wrapper="p"
+                  />
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
+        <div
+          className="pointer-events-none absolute top-auto bottom-0 left-0 right-0 w-full overflow-hidden"
+          style={{ height: "70px" }}
+        >
+          <svg
+            className="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              className="fill-current text-gray-300"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
