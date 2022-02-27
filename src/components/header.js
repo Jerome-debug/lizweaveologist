@@ -36,8 +36,7 @@ export default function Header() {
                     animated ? "translate-y-0" : textStyleTranslate
                   } ${transitionAndTiming(2000)}`}
                 >
-                  Hi <span className="animate-bounce text-5xl">👋</span>{" "}
-                  {/*TODO animation not working */}
+                  Hi <div className="animate-bounce inline-block text-5xl">👋</div>{" "}
                 </h1>
                 <h1
                   className={`mt-4 transform text-left text-2xl font-light text-pink-100 md:text-4xl ${
