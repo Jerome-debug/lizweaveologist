@@ -1,9 +1,10 @@
 import React from "react";
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Gallery() {
   return (
     <>
-      <section className="relative block bg-gray-900 pb-20">
+      <section className="relative block bg-slate-900 pb-20">
         <div
           className="pointer-events-none absolute bottom-auto top-0 left-0 right-0 -mt-20 w-full overflow-hidden"
           style={{ height: "80px" }}
@@ -26,7 +27,7 @@ export default function Gallery() {
 
         <div className="container mx-auto px-4 lg:pt-24 lg:pb-10">
           <div className="flex flex-wrap justify-center text-center">
-            <div className="w-full px-4 lg:w-6/12">
+            <div className="w-full px-4 py-4 lg:w-6/12">
               <h2 className="text-4xl font-semibold text-white">My Work</h2>
             </div>
           </div>
@@ -39,19 +40,20 @@ export default function Gallery() {
               down to low ice. According to the National Oceanic and
               Atmospheric Administration, Ted, Scambos.
             </p>
-            {/*TODO add grid images here*/}
-            <div className="h-16 w-5/6 bg-red-500 xs:h-auto xs:square md:col-start-4"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square md:col-start-2"></div>
-            <div className="h-10 w-5/6 bg-pink-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-pink-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-pink-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-pink-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-blue-500 xs:h-auto xs:square"></div>
-            <div className="h-10 w-5/6 bg-pink-500 xs:h-auto xs:square"></div>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-4 rounded-md" layout="constrained" src="../images/client-1.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-3 rounded-md" layout="constrained" src="../images/client-2.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-3.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-2 rounded-md" layout="constrained" src="../images/client-4.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-5.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-6.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-7.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-8.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-9.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-10.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-11.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-12.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-11.jpg" alt="client-"/>
+            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-12.jpg" alt="client-"/>
           </div>
         </div>
       </section>
