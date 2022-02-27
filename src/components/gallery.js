@@ -52,31 +52,30 @@ export default function Gallery({ imgData }) {
           </div>
 
           {/* TODO xs:grid-cols-2 affects md:grid-cols-4 */}
-          {/* TODO add pulse animation */}
           <div className="mx-auto grid min-h-fit max-w-6xl place-items-center gap-y-4 px-4 py-4 sm:grid-cols-2 md:grid-cols-4">
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-500 xs:col-span-2">
               Enjoy a glimpse of my professionalism.
             </p>
             <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-4 xs:h-auto"
+              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-4 xs:h-auto"
               layout="constrained"
               src="../images/client-1.jpg"
               alt="client-"
             />
             <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-3 xs:h-auto"
+              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-3 xs:h-auto"
               layout="constrained"
               src="../images/client-2.jpg"
               alt="client-"
             />
             <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
               layout="constrained"
               src="../images/client-3.jpg"
               alt="client-"
             />
             <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-2 xs:h-auto"
+              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-2 xs:h-auto"
               layout="constrained"
               src="../images/client-4.jpg"
               alt="client-"
@@ -87,7 +86,7 @@ export default function Gallery({ imgData }) {
 
                 return (
                   <GatsbyImage
-                    className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+                    className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
                     layout="constrained"
                     image={image}
                     alt={node.fluid?.originalName}
