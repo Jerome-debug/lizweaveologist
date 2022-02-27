@@ -1,7 +1,26 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function Gallery() {
+export default function Gallery({ imgData }) {
+  // the following images will be loaded statically
+  // - client-1.jpg client-2.jpg client-4.jpg
+  // the following images, including the ones mentioned above are not required here
+  // - icon.png, liz_ngote.jpg, hero_liz_ngote.jpg, shari-sirotnak-oM5YoMhTf8E-unsplash.jpg
+
+  const unRequiredImages = [
+    "icon.png",
+    "liz_ngote.jpg",
+    "hero_liz_ngote.jpg",
+    "shari-sirotnak-oM5YoMhTf8E-unsplash.jpg",
+    "client-1.jpg",
+    "client-2.jpg",
+    "client-3.jpg",
+    "client-4.jpg",
+  ];
+  const dynamicImages = imgData.allImageSharp.edges.filter(
+    ({ node }) => !unRequiredImages.includes(node.fluid.originalName)
+  );
+
   return (
     <>
       <section className="relative block bg-slate-900 pb-20">
@@ -64,66 +83,19 @@ export default function Gallery() {
               src="../images/client-4.jpg"
               alt="client-"
             />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-5.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-6.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-7.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-8.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-9.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-10.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-11.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-12.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-11.jpg"
-              alt="client-"
-            />
-            <StaticImage
-              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-              layout="constrained"
-              src="../images/client-12.jpg"
-              alt="client-"
-            />
+            {dynamicImages &&
+              dynamicImages.map(({ node }) => {
+                const image = getImage(node);
+
+                return (
+                  <GatsbyImage
+                    className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+                    layout="constrained"
+                    image={image}
+                    alt={node.fluid?.originalName}
+                  />
+                );
+              })}
           </div>
         </div>
       </section>
