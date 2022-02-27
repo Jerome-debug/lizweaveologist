@@ -17,14 +17,18 @@ export default function Feature() {
                 My passion for hair and beauty would surpass your imagination.
               </p>
               <p className="mt-0 mb-4 text-lg font-light leading-relaxed text-gray-700">
-                I specialize in handling your beauty and cosmetic needs. I welcome you all to
-                Rapunzel Hair Affair, Soin Arcade Building, Westlands, where I am based at.
+                I specialize in handling your beauty and cosmetic needs. I
+                welcome you all to Rapunzel Hair Affair, Soin Arcade Building,
+                Westlands, where I am based at.
               </p>
+              {/*TODO provide whatsapp business link*/}
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                className="mt-8 font-bold text-gray-800"
+                href="https://web.whatsapp.com"
+                className="mt-8 font-bold text-white"
               >
-                Let's Chat
+                <button className="animate-bounce rounded-md bg-green-500 px-4 py-2">
+                  Let's Chat
+                </button>
               </a>
             </div>
 
@@ -55,18 +59,20 @@ export default function Feature() {
                     Award Winning & International
                   </h4>
                   <p className="text-md mt-2 font-light text-white">
-                    I have more that 15yrs experience and my love for hair has seen me 
-                    attend bronner brothers hair expo in Atlanta and for the International hair expo in Dubai
+                    I have more that 15yrs experience and my love for hair has
+                    seen me attend bronner brothers hair expo in Atlanta and for
+                    the International hair expo in Dubai
                   </p>
                   <p className="text-md mt-2 font-light text-white">
-                    I have an outstanding clientele base here in Kenya, comprising
-                    of celebrities, politicians as well as expats who come to seek for my
-                    services.
+                    I have an outstanding clientele base here in Kenya,
+                    comprising of celebrities, politicians as well as expats who
+                    come to seek for my services.
                   </p>
                   <p className="text-md mt-2 font-light text-white">
-                    I also love mentoring upcoming hair stylists to appreciate this trade 
-                    as well as embrace professionalism in order to foster the prevalence
-                    of the respect that is given to the hair industry.
+                    I also love mentoring upcoming hair stylists to appreciate
+                    this trade as well as embrace professionalism in order to
+                    foster the prevalence of the respect that is given to the
+                    hair industry.
                   </p>
                 </blockquote>
               </div>

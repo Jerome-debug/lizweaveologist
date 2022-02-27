@@ -57,25 +57,25 @@ export default function Gallery({ imgData }) {
               Enjoy a glimpse of my professionalism.
             </p>
             <StaticImage
-              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-4 xs:h-auto"
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain hover:animate-pulse md:col-start-4 xs:h-auto"
               layout="constrained"
               src="../images/client-1.jpg"
               alt="client-"
             />
             <StaticImage
-              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-3 xs:h-auto"
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain hover:animate-pulse md:col-start-3 xs:h-auto"
               layout="constrained"
               src="../images/client-2.jpg"
               alt="client-"
             />
             <StaticImage
-              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain hover:animate-pulse xs:h-auto"
               layout="constrained"
               src="../images/client-3.jpg"
               alt="client-"
             />
             <StaticImage
-              className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-2 xs:h-auto"
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain hover:animate-pulse md:col-start-2 xs:h-auto"
               layout="constrained"
               src="../images/client-4.jpg"
               alt="client-"
@@ -86,7 +86,7 @@ export default function Gallery({ imgData }) {
 
                 return (
                   <GatsbyImage
-                    className="hover:animate-pulse sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+                    className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain hover:animate-pulse xs:h-auto"
                     layout="constrained"
                     image={image}
                     alt={node.fluid?.originalName}
