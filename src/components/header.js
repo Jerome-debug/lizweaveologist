@@ -50,9 +50,9 @@ export default function Header() {
                     steps={[
                       "am Liz Ngote",
                       5000,
-                      "am a Weavologist",
+                      "am a WeaveExpert",
                       5000,
-                      "am your Hair stylist 💇🏻‍♀️",
+                      "am your Weaveologist 💇🏻‍♀️",
                       5000,
                     ]}
                     loop={Infinity}

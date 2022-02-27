@@ -14,14 +14,11 @@ export default function Feature() {
                 Come and enjoy the experience
               </h3>
               <p className="mt-4 mb-4 text-lg font-light leading-relaxed text-gray-700">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                My passion for hair and beauty would surpass your imagination.
               </p>
               <p className="mt-0 mb-4 text-lg font-light leading-relaxed text-gray-700">
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                I specialize in handling your beauty and cosmetic needs. I welcome you all to
+                Rapunzel Hair Affair, Soin Arcade Building, Westlands, where I am based at.
               </p>
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
@@ -55,12 +52,21 @@ export default function Feature() {
                     ></polygon>
                   </svg>
                   <h4 className="text-xl font-bold text-white">
-                    Top Notch Services
+                    Award Winning & International
                   </h4>
                   <p className="text-md mt-2 font-light text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    I have more that 15yrs experience and my love for hair has seen me 
+                    attend bronner brothers hair expo in Atlanta and for the International hair expo in Dubai
+                  </p>
+                  <p className="text-md mt-2 font-light text-white">
+                    I have an outstanding clientele base here in Kenya, comprising
+                    of celebrities, politicians as well as expats who come to seek for my
+                    services.
+                  </p>
+                  <p className="text-md mt-2 font-light text-white">
+                    I also love mentoring upcoming hair stylists to appreciate this trade 
+                    as well as embrace professionalism in order to foster the prevalence
+                    of the respect that is given to the hair industry.
                   </p>
                 </blockquote>
               </div>
