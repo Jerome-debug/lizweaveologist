@@ -7,8 +7,19 @@ export default function Gallery({ imgData }) {
   // the following images, including the ones mentioned above are not required here
   // - icon.png, liz_ngote.jpg, hero_liz_ngote.jpg, shari-sirotnak-oM5YoMhTf8E-unsplash.jpg
 
-  const unRequiredImages = ['icon.png', 'liz_ngote.jpg', 'hero_liz_ngote.jpg', 'shari-sirotnak-oM5YoMhTf8E-unsplash.jpg', 'client-1.jpg', 'client-2.jpg', 'client-3.jpg', 'client-4.jpg'];
-  const dynamicImages = imgData.allImageSharp.edges.filter(({ node }) => !unRequiredImages.includes(node.fluid.originalName));
+  const unRequiredImages = [
+    "icon.png",
+    "liz_ngote.jpg",
+    "hero_liz_ngote.jpg",
+    "shari-sirotnak-oM5YoMhTf8E-unsplash.jpg",
+    "client-1.jpg",
+    "client-2.jpg",
+    "client-3.jpg",
+    "client-4.jpg",
+  ];
+  const dynamicImages = imgData.allImageSharp.edges.filter(
+    ({ node }) => !unRequiredImages.includes(node.fluid.originalName)
+  );
 
   return (
     <>
@@ -72,18 +83,19 @@ export default function Gallery({ imgData }) {
               src="../images/client-4.jpg"
               alt="client-"
             />
-            {dynamicImages && dynamicImages.map(({ node }) => {
-              const image = getImage(node);
+            {dynamicImages &&
+              dynamicImages.map(({ node }) => {
+                const image = getImage(node);
 
-              return (
-                <GatsbyImage
-                  className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
-                  layout="constrained"
-                  image={image}
-                  alt={node.fluid?.originalName}
-                />
-              );
-            })}
+                return (
+                  <GatsbyImage
+                    className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+                    layout="constrained"
+                    image={image}
+                    alt={node.fluid?.originalName}
+                  />
+                );
+              })}
           </div>
         </div>
       </section>
