@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Gallery() {
   return (
@@ -34,26 +34,96 @@ export default function Gallery() {
 
           {/* TODO xs:grid-cols-2 affects md:grid-cols-4 */}
           {/* TODO add pulse animation */}
-          <div className="grid min-h-fit max-w-6xl place-items-center gap-y-4 px-4 py-4 mx-auto sm:grid-cols-2 md:grid-cols-4">
+          <div className="mx-auto grid min-h-fit max-w-6xl place-items-center gap-y-4 px-4 py-4 sm:grid-cols-2 md:grid-cols-4">
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-500 xs:col-span-2">
               Put the potentially record low maximum sea ice extent tihs year
-              down to low ice. According to the National Oceanic and
-              Atmospheric Administration, Ted, Scambos.
+              down to low ice. According to the National Oceanic and Atmospheric
+              Administration, Ted, Scambos.
             </p>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-4 rounded-md" layout="constrained" src="../images/client-1.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-3 rounded-md" layout="constrained" src="../images/client-2.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-3.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 md:col-start-2 rounded-md" layout="constrained" src="../images/client-4.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-5.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-6.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-7.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-8.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-9.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-10.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-11.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-12.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-11.jpg" alt="client-"/>
-            <StaticImage className="object-contain h-5/6 w-5/6 bg-red-500 xs:h-auto sm:square md:rectangle-1 rounded-md" layout="constrained" src="../images/client-12.jpg" alt="client-"/>
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-4 xs:h-auto"
+              layout="constrained"
+              src="../images/client-1.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-3 xs:h-auto"
+              layout="constrained"
+              src="../images/client-2.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-3.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain md:col-start-2 xs:h-auto"
+              layout="constrained"
+              src="../images/client-4.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-5.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-6.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-7.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-8.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-9.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-10.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-11.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-12.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-11.jpg"
+              alt="client-"
+            />
+            <StaticImage
+              className="sm:square md:rectangle-1 h-5/6 w-5/6 rounded-md bg-red-500 object-contain xs:h-auto"
+              layout="constrained"
+              src="../images/client-12.jpg"
+              alt="client-"
+            />
           </div>
         </div>
       </section>
