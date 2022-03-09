@@ -12,7 +12,6 @@ Liz Ngote portfolio
 
 
         https://github.com/Jerome-debug/lizweaveologist
-
 2.**Dependancies used.**
 
 Used the Yarn dependancy package 
