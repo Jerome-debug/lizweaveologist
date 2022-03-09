@@ -17,7 +17,8 @@ Liz Ngote portfolio
 
     Used the Yarn dependancy package 
 
-    *Yarn Work Flow*
+    **Yarn Work Flow**
+    
     a)Creating a new project
     
     b)Adding/updating/removing dependencies
@@ -49,7 +50,7 @@ Liz Ngote portfolio
     
     
 
-2.  **Adding a dependency**
+    **b) Adding a dependency**
 
 
     If you want to use another package, you first need to add it as a dependency. In order to do that you should run:
@@ -80,17 +81,19 @@ Liz Ngote portfolio
 3.**Adding a dependency to different categories of dependencies.**
 
 Add to devDependencies, peerDependencies, and optionalDependencies respectively:
-      ```shell
-      yarn add [package] --dev
-      yarn add [package] --peer
-      yarn add [package] --optional
+  ```shell
+  yarn add [package] --dev
+  yarn add [package] --peer
+  yarn add [package] --optional
 
-      ````
+  ````
+  
+  
+  
+**c). Installing all the dependencies of project**
 
-
-3.  **Installing all the dependencies of project**
-
-yarn install is used to install all dependencies for a project. The dependencies are retrieved from your project’s package.json file, and stored in the yarn.lock file.
+yarn install is used to install all dependencies for a project. 
+The dependencies are retrieved from your project’s package.json file, and stored in the yarn.lock file.
 
 When developing a package, installing dependencies is most commonly done after:
 
@@ -106,10 +109,6 @@ Another developer on the project has added a new dependency that you need to pic
 
       ````
 
-   # Your site is now running at http://localhost:8000!
-
-    #Edit `src/pages/index.js` to see your site update in real-time!
-
 4.  **Version Control*
 
 To have people successfully develop or use your package, you need to ensure that all the necessary files are checked into your source control system.
@@ -124,16 +123,16 @@ The actual source code that provides the functionality for your package.
 
 Yarn can easily be used in various continuous integration systems. To speed up builds, the Yarn cache directory can be saved across builds.
 
-AppVeyor
-CircleCI
-Codeship
-Travis
-Semaphore
-Solano
-GitLab
-Codefresh
+      AppVeyor
+      CircleCI
+      Codeship
+      Travis
+      Semaphore
+      Solano
+      GitLab
+      Codefresh
 
   
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
 
 
