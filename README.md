@@ -1,54 +1,139 @@
 <p align="center">
   <a href="https://lizweaveologist.gatsbyjs.io/">
-    <img alt="Liz Ngote portfolio" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Liz Ngote portfolio" src="https://lizweaveologist.gatsbyjs.io/static/46142e7d5768f97cf486c12ca25cd733/27e9d/liz_ngote.webp" width="60" />
   </a>
 </p>
 <h1 align="center">
 Liz Ngote portfolio
 </h1>
 
-## 🚀 Introduction
+## 🚀 Getting Started
+1.  **Clone the project.**
 
-1.  **Dependancies used.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+        https://github.com/Jerome-debug/lizweaveologist
+
+2.  **Dependancies used.**
+
+    Used the Yarn dependancy package 
+
+    *Yarn Work Flow*
+    a)Creating a new project
+    
+    b)Adding/updating/removing dependencies
+    
+    c)Installing/reinstalling your dependencies
+    
+    d)Working with version control (e.g. git)
+    
+    e)Continuous Integration
+
+    **a) Starting a new project.**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    # create a new yarn  projetc using
+
+    yarn init
     ```
+    
+    This will open up an interactive form for creating a new yarn project with the following questions:
+    
+            name (your-project):
+            version (1.0.0):
+            description:
+            entry point (index.js):
+            git repository:
+            author:
+            license (MIT):
+    
+    
+    
 
-2.  **Start developing.**
+2.  **Adding a dependency**
 
-    Navigate into your new site’s directory and start it up.
+
+    If you want to use another package, you first need to add it as a dependency. In order to do that you should run:
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    yarn add [package]
+    yarn add [package]@[version]
+    yarn add [package]@[tag]
     ```
+    
+    
+    This will automatically add the [package] to your dependencies in your package.json. It will also update your yarn.lock to reflect the change.
+    
+            {
+          "name": "my-package",
+          "dependencies": {
+          "package-1": "^1.0.0"
+          }
+        }
+        
+  You can also add other types of dependencies using flags:
 
-3.  **Open the code and start customizing!**
+      yarn add --dev to add to devDependencies
+      yarn add --peer to add to peerDependencies
+      yarn add --optional to add to optionalDependencies
+      
+      
+3.**Adding a dependency to different categories of dependencies.**
 
-    Your site is now running at http://localhost:8000!
+Add to devDependencies, peerDependencies, and optionalDependencies respectively:
+      ```shell
+      yarn add [package] --dev
+      yarn add [package] --peer
+      yarn add [package] --optional
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+      ````
 
-4.  **Learn more**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+3.  **Installing all the dependencies of project**
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+yarn install is used to install all dependencies for a project. The dependencies are retrieved from your project’s package.json file, and stored in the yarn.lock file.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+When developing a package, installing dependencies is most commonly done after:
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+You have just checked out code for a project that needs these dependencies to function.
+Another developer on the project has added a new dependency that you need to pick up.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+      ````shell
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+      yarn
 
-## 🚀 Quick start (Gatsby Cloud)
+      #or
 
+
+      ````
+
+   # Your site is now running at http://localhost:8000!
+
+    #Edit `src/pages/index.js` to see your site update in real-time!
+
+4.  **Version Control*
+
+To have people successfully develop or use your package, you need to ensure that all the necessary files are checked into your source control system.
+
+The following files must be checked into source control for anyone to be able to manage your package:
+
+package.json: This has all the current dependencies for your package.
+yarn.lock: This stores the exact versions of each dependency for your package.
+The actual source code that provides the functionality for your package.
+
+5. **Continuous Integration.**
+
+Yarn can easily be used in various continuous integration systems. To speed up builds, the Yarn cache directory can be saved across builds.
+
+AppVeyor
+CircleCI
+Codeship
+Travis
+Semaphore
+Solano
+GitLab
+Codefresh
+
+  
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
